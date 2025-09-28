@@ -22,20 +22,41 @@ document.getElementById("app").innerHTML = `
 
     <!-- Diagram Values -->
     <div class="grid grid-cols-2 md:grid-cols-5 gap-6 mb-16 text-center">
-      ${[
-        {title:"Leadership",img:"https://cdn-icons-png.flaticon.com/512/3135/3135715.png",desc:"Asah kemampuan memimpin dan memotivasi tim..."},
-        {title:"Mentoring",img:"https://cdn-icons-png.flaticon.com/512/1006/1006771.png",desc:"Dapatkan bimbingan langsung dari mentor..."},
-        {title:"Networking",img:"https://cdn-icons-png.flaticon.com/512/1256/1256650.png",desc:"Bangun jaringan relasi antar mahasiswa..."},
-        {title:"Innovation",img:"https://cdn-icons-png.flaticon.com/512/1055/1055644.png",desc:"Kembangkan ide kreatifmu menjadi solusi..."},
-        {title:"Business Skills",img:"https://cdn-icons-png.flaticon.com/512/3132/3132693.png",desc:"Asah keterampilan praktis dalam manajemen..."}
-      ].map(val => `
-        <div onclick="openModal('${val.title}','${val.desc}')" 
-             class="cursor-pointer bg-white/10 rounded-2xl p-6 border border-white/20 shadow-xl hover:scale-105 transition">
-          <img src="${val.img}" class="w-12 h-12 mx-auto mb-3" alt="${val.title}">
-          <h3 class="text-white font-semibold">${val.title}</h3>
-        </div>
-      `).join("")}
+  ${[
+    {
+      title:"Leadership",
+      img:"https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+      desc:"Latih kemampuan memimpin dengan memahami cara mengatur strategi, mengelola tim, serta mengambil keputusan yang tepat. Leadership juga mengajarkan bagaimana menjadi inspirasi bagi orang lain agar bersama-sama mencapai tujuan besar."
+    },
+    {
+      title:"Mentoring",
+      img:"https://cdn-icons-png.flaticon.com/512/1006/1006771.png",
+      desc:"Dapatkan bimbingan langsung dari mentor yang berpengalaman di bidangnya. Melalui mentoring, kamu bisa memperoleh insight berharga, mempercepat proses belajar, dan menghindari kesalahan umum yang sering dialami pemula."
+    },
+    {
+      title:"Networking",
+      img:"https://cdn-icons-png.flaticon.com/512/1256/1256650.png",
+      desc:"Bangun relasi dengan mahasiswa dari berbagai jurusan, komunitas, maupun profesional di luar kampus. Networking membuka banyak peluang, mulai dari kolaborasi, project bersama, hingga kesempatan kerja di masa depan."
+    },
+    {
+      title:"Innovation",
+      img:"https://cdn-icons-png.flaticon.com/512/1055/1055644.png",
+      desc:"Kembangkan ide-ide kreatif menjadi solusi nyata yang bermanfaat untuk masyarakat. Innovation tidak hanya tentang berpikir out of the box, tapi juga bagaimana mengimplementasikan gagasan agar berdampak luas."
+    },
+    {
+      title:"Business Skills",
+      img:"https://cdn-icons-png.flaticon.com/512/3132/3132693.png",
+      desc:"Kuasi keterampilan praktis seperti manajemen, pemasaran, hingga pengelolaan keuangan. Dengan business skills yang baik, kamu dapat mengembangkan usaha secara profesional dan berkelanjutan."
+    }
+  ].map(val => `
+    <div onclick="openModal('${val.title}','${val.desc}')" 
+         class="cursor-pointer bg-white/10 rounded-2xl p-6 border border-white/20 shadow-xl hover:scale-105 transition">
+      <img src="${val.img}" class="w-12 h-12 mx-auto mb-3" alt="${val.title}">
+      <h3 class="text-white font-semibold">${val.title}</h3>
     </div>
+  `).join("")}
+</div>
+
 
     <!-- Grid Sosial Media -->
     <div class="grid md:grid-cols-2 gap-6">
