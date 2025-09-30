@@ -81,7 +81,7 @@ document.getElementById("app").innerHTML = `
       <h2 class="text-xl font-bold text-white">WhatsApp</h2>
     </div>
     <!-- Tombol Admin langsung ke WA dengan pesan otomatis -->
-    <a href="https://wa.me/6285176871609?text=Halo%20Admin%2C%20saya%20ingin%20mendaftar%20Club%20Wirausaha%20UNUJA.%0A%0ABisa%20dijelaskan%20program%20kerja%20atau%20kegiatan%20yang%20akan%20dijalankan%3F
+    <a href="https://wa.me/6285385518248?text=Halo%20Admin%2C%20saya%20ingin%20mendaftar%20Club%20Wirausaha%20UNUJA.%0A%0ABisa%20dijelaskan%20program%20kerja%20atau%20kegiatan%20yang%20akan%20dijalankan%3F
 " 
        target="_blank" 
        class="shine-btn px-3 py-1 rounded-lg bg-green-500 text-white text-sm font-semibold hover:scale-105 transition">
@@ -152,3 +152,4 @@ function openModal(title, desc) {
 function closeModal() {
   document.getElementById('modal').classList.add('hidden');
 }
+
