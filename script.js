@@ -4,7 +4,7 @@ document.getElementById("app").innerHTML = `
     <!-- Header -->
     <div class="text-center mb-10">
       <img src="logo1.jpg" alt="Logo Organisasi" class="mx-auto w-28 h-28 rounded-full border-4 border-white shadow-xl">
-      <h1 class="text-4xl font-bold text-white mt-4">Club Wirausaha UNUJA</h1>
+      <h1 class="text-4xl font-bold text-white mt-4">CLUB WIRAUSAHA UNUJA</h1>
       <p class="text-gray-300 mt-2 flex flex-col sm:flex-row justify-center items-center gap-2">
         <span>Ketua: <span class="text-white font-semibold">Rica Rachmawati</span></span>
         <span class="sm:before:content-['|'] sm:before:mx-2">Periode 2025 - 2026</span>
@@ -152,4 +152,5 @@ function openModal(title, desc) {
 function closeModal() {
   document.getElementById('modal').classList.add('hidden');
 }
+
 
