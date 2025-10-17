@@ -57,7 +57,6 @@ document.getElementById("app").innerHTML = `
   `).join("")}
 </div>
 
-
     <!-- Grid Sosial Media -->
     <div class="grid md:grid-cols-2 gap-6">
       <!-- Instagram -->
@@ -75,29 +74,26 @@ document.getElementById("app").innerHTML = `
 
       <!-- WhatsApp -->
       <div class="bg-white/10 backdrop-blur-xl rounded-2xl p-6 border border-white/20 shadow-2xl">
-  <div class="flex items-center justify-between mb-4">
-    <div class="flex items-center gap-3">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="w-10 h-10" alt="WhatsApp">
-      <h2 class="text-xl font-bold text-white">WhatsApp</h2>
-    </div>
-    <!-- Tombol Admin langsung ke WA dengan pesan otomatis -->
-    <a href="https://wa.me/6285385518248?text=Halo%20Admin%2C%20saya%20ingin%20mendaftar%20Club%20Wirausaha%20UNUJA.%0A%0ABisa%20dijelaskan%20program%20kerja%20atau%20kegiatan%20yang%20akan%20dijalankan%3F
-" 
-       target="_blank" 
-       class="shine-btn px-3 py-1 rounded-lg bg-green-500 text-white text-sm font-semibold hover:scale-105 transition">
-       Admin
-    </a>
-  </div>
-  <p class="text-gray-300 text-sm mb-4">
-    Terhubung langsung dengan admin untuk pendaftaran, informasi program kerja, dan kegiatan terbaru.
-  </p>
-  <a href="https://whatsapp.com/channel/0029Vb6W0kvFSAsvm6ozaY36" 
-     target="_blank" 
-     class="shine-btn block w-full text-center py-2 rounded-lg bg-green-600 text-white font-semibold hover:scale-105 transition">
-     Saluran WA
-  </a>
-</div>
-
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center gap-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="w-10 h-10" alt="WhatsApp">
+            <h2 class="text-xl font-bold text-white">WhatsApp</h2>
+          </div>
+          <a href="https://wa.me/6285385518248?text=Halo%20Admin%2C%20saya%20ingin%20mendaftar%20Club%20Wirausaha%20UNUJA.%0A%0ABisa%20dijelaskan%20program%20kerja%20atau%20kegiatan%20yang%20akan%20dijalankan%3F"
+             target="_blank" 
+             class="shine-btn px-3 py-1 rounded-lg bg-green-500 text-white text-sm font-semibold hover:scale-105 transition">
+             Admin
+          </a>
+        </div>
+        <p class="text-gray-300 text-sm mb-4">
+          Terhubung langsung dengan admin untuk pendaftaran, informasi program kerja, dan kegiatan terbaru.
+        </p>
+        <a href="https://whatsapp.com/channel/0029Vb6W0kvFSAsvm6ozaY36" 
+           target="_blank" 
+           class="shine-btn block w-full text-center py-2 rounded-lg bg-green-600 text-white font-semibold hover:scale-105 transition">
+           Saluran WA
+        </a>
+      </div>
 
       <!-- TikTok -->
       <div class="bg-white/10 backdrop-blur-xl rounded-2xl p-6 border border-white/20 shadow-2xl">
@@ -119,9 +115,20 @@ document.getElementById("app").innerHTML = `
             <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="w-10 h-10" alt="Gmail">
             <h2 class="text-xl font-bold text-white">Gmail</h2>
           </div>
-          <a href="#" onclick="event.preventDefault();alert('Fitur Belum Diaktifkan');" class="shine-btn px-3 py-1 rounded-lg bg-red-600 text-white text-sm font-semibold hover:scale-105 transition">Email</a>
+          <a href="mailto:clubwirausaha.unuja@gmail.com?subject=Pendaftaran%20Club%20Wirausaha%20UNUJA&body=Halo%20Admin%2C%20saya%20ingin%20mendaftar%20Club%20Wirausaha%20UNUJA.%0A%0ABisa%20dijelaskan%20program%20kerja%20atau%20kegiatan%20yang%20akan%20dijalankan%3F"
+             target="_blank" 
+             class="shine-btn px-3 py-1 rounded-lg bg-red-600 text-white text-sm font-semibold hover:scale-105 transition">
+             Admin
+          </a>
         </div>
-        <p class="text-gray-300 text-sm mb-4">Kirimkan pertanyaan atau kerja sama ke email resmi kami.</p>
+        <p class="text-gray-300 text-sm mb-4">
+          Hubungi admin langsung melalui email resmi kami untuk pendaftaran, kerja sama, atau informasi kegiatan.
+        </p>
+        <a href="mailto:clubwirausaha.unuja@gmail.com?subject=Kerja%20Sama%20dan%20Informasi&body=Halo%2C%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20program%20Club%20Wirausaha%20UNUJA."
+           target="_blank"
+           class="shine-btn block w-full text-center py-2 rounded-lg bg-gradient-to-r from-red-500 to-orange-600 text-white font-semibold hover:scale-105 transition">
+           Kirim Email
+        </a>
       </div>
 
       <!-- Tombol Daftar -->
@@ -130,6 +137,7 @@ document.getElementById("app").innerHTML = `
           <span class="relative z-10">DAFTAR</span>
           <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></span>
         </a>
+      </div>
     </div>
   </div>
 
@@ -152,7 +160,3 @@ function openModal(title, desc) {
 function closeModal() {
   document.getElementById('modal').classList.add('hidden');
 }
-
-
-
-
