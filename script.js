@@ -126,7 +126,7 @@ document.getElementById("app").innerHTML = `
 
       <!-- Tombol Daftar -->
       <div class="col-span-full flex justify-center mt-6">
-        <a href="#" class="relative block w-full text-center py-3 rounded-xl bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600 text-white font-semibold text-lg shadow-lg hover:shadow-blue-500/50 hover:scale-105 active:scale-95 transition-all duration-300 ease-out overflow-hidden group">
+        <a href="#" onclick="event.preventDefault();alert('PENDAFTARAN DITUTUP');" class="relative block w-full text-center py-3 rounded-xl bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600 text-white font-semibold text-lg shadow-lg hover:shadow-blue-500/50 hover:scale-105 active:scale-95 transition-all duration-300 ease-out overflow-hidden group">
           <span class="relative z-10">DAFTAR</span>
           <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></span>
         </a>
@@ -152,6 +152,7 @@ function openModal(title, desc) {
 function closeModal() {
   document.getElementById('modal').classList.add('hidden');
 }
+
 
 
 
